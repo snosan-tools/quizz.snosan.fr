@@ -1,7 +1,9 @@
 <template>
   <div>
-    <h3 class="text-orange-dark">Question {{ questionNumber }}</h3><br/>
-    <strong>{{ question.text }} </strong>
+    <h3 class="mb-5">
+      <span class="text-orange-dark">Question {{ questionNumber }}</span><span class="text-grey text-sm">/{{ nbQuestions }}</span>
+    </h3>
+    <strong>{{ question.text }}</strong>
 
     <div class="mt-5">
       <div v-if="question.type === 'tf'">
@@ -23,7 +25,7 @@
 <script>
 export default {
   name: 'Question',
-  props: ['question', 'question-number'],
+  props: ['question', 'question-number', 'nbQuestions'],
   data () {
     return {
       answer: ''

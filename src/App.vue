@@ -2,14 +2,12 @@
   <div id="app">
     <Quiz url="/static/data.json">
       <div slot="intro" slot-scope="props">
-        This is my custom quiz header for {{props.title}}.
+        {{props.title}}
       </div>
 
       <div slot="results" slot-scope="props">
-        <h2 class="text-orange mb-3">WOWOWOW!</h2>
-          You got {{props.correct}} right out of
-          {{props.length}} questions.
-        Your percentage is {{props.perc}}%.
+        <h2 class="text-orange mb-3">Félicitations !</h2>
+          Tu as bien répondu à {{props.correct}} questions sur {{props.length}}, soit {{props.perc}}%. À bientôt en mer !
       </div>
     </Quiz>
   </div>

@@ -12,6 +12,7 @@
         :question="questions[currentQuestion]"
         v-on:answer="handleAnswer"
         :question-number="currentQuestion+1"
+        :nb-questions="questions.length"
       ></Question>
     </div>
 
