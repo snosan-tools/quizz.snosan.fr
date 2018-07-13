@@ -5,7 +5,8 @@ all: dist dist/index.html
 dist:
 	git worktree add dist gh-pages
 
-dist/index.html: yarn run build
+dist/index.html: src/index.html
+	yarn run build
 
 deploy: all
 	cd dist && \
