@@ -26,14 +26,16 @@
       </div>
 
       <div v-if="resultStage">
-        <div v-if="answerIsGood" class="text-green mb-5">
+        <div v-if="answerIsGood" class="text-green">
           Bonne réponse !
         </div>
-        <div v-else class="text-red mb-5">
+        <div v-else class="text-red">
           Oups, pas tout à fait.
         </div>
 
-        La bonne réponse est : {{ presentedAnswer }}.
+        <div class="mt-5">
+          La bonne réponse est : {{ presentedAnswer }}.
+        </div>
 
         <button
           @click="submitAnswer"
