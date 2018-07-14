@@ -6,26 +6,26 @@
     <strong>{{ question.text }}</strong>
 
     <div class="mt-5">
-      <div v-if="!resultStage">
-        <div v-if="question.type === 'tf'">
+      <template v-if="!resultStage">
+        <template v-if="question.type === 'tf'">
           <input type="radio" name="currentQuestion" id="trueAnswer" v-model="answer" value="t" class="mb-4"><label for="trueAnswer" class="mx-2">Vrai</label><br/>
           <input type="radio" name="currentQuestion" id="falseAnswer" v-model="answer" value="f"><label for="falseAnswer" class="mx-2">Faux</label><br/>
-        </div>
+        </template>
 
-        <div v-if="question.type === 'mc'">
+        <template v-if="question.type === 'mc'">
           <div v-for="(mcanswer, index) in question.answers" :key='index'>
           <input type="radio" :id="'answer'+index" name="currentQuestion" v-model="answer" :value="mcanswer" class="mb-4"><label :for="'answer'+index" class="mx-2">{{mcanswer}}</label><br/>
           </div>
-        </div>
+        </template>
 
         <button
           @click="checkAnswer"
           class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded mt-8">
           Continuer
         </button>
-      </div>
+      </template>
 
-      <div v-if="resultStage">
+      <template v-if="resultStage">
         <div v-if="answerIsGood" class="text-green">
           Bonne réponse !
         </div>
@@ -33,8 +33,12 @@
           Oups, pas tout à fait.
         </div>
 
-        <div class="mt-5">
+        <div class="my-5">
           La bonne réponse est : {{ presentedAnswer }}.
+        </div>
+
+        <div class="border-l-2 border-grey sm:ml-2 ml-1 sm:p-2 p-1 pl-3 text-sm">
+          {{ question.explanations }}
         </div>
 
         <button
@@ -42,7 +46,7 @@
           class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded mt-8">
           Continuer
         </button>
-      </div>
+      </template>
     </div>
   </div>
 </template>
