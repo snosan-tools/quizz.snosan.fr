@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Quiz url="/static/data.json">
+    <Quiz :url="'static/' + data">
       <div slot="intro" slot-scope="props">
         {{props.title}}
       </div>
@@ -18,6 +18,11 @@ import Quiz from './components/Quiz'
 
 export default {
   name: 'App',
+  data () {
+    return {
+      data: new URL(window.location.href).searchParams.get('quizz') || 'data.json'
+    }
+  },
   components: {
     Quiz
   }
