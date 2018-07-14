@@ -3,6 +3,13 @@
     <h3 class="mb-5">
       <span class="text-orange-dark">Question {{ questionNumber }}</span><span class="text-grey text-sm">/{{ nbQuestions }}</span>
     </h3>
+
+    <template v-if="question.image">
+      <div class="bg-white rounded sm:p-1 shadow mb-8">
+        <img class="w-full rounded" :src="question.image">
+      </div>
+    </template>
+
     <strong>{{ question.text }}</strong>
 
     <div class="mt-5">
