@@ -21,6 +21,10 @@
       Tu as bien répondu à {{correct}} questions sur {{questions.length}}, soit {{perc}}%. Merci !
       </slot>
     </div>
+
+    <div v-for="question in questions" :key="question.text" class="hidden">
+      <img :src="question.image" alt="preload" v-if="question.image">
+    </div>
   </div>
 </template>
 
