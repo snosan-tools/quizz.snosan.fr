@@ -83,10 +83,16 @@ export default {
       return this.answer === this.question.answer
     },
     presentedAnswer: function () {
-      if (this.question.type === 'tf') {
+      if (this.isTrueFalse) {
         return (this.question.answer === 't') ? 'Vrai' : 'Faux'
       }
       return this.question.answer
+    },
+    isTrueFalse: function () {
+      return this.question.type === 'tf'
+    },
+    isMultipleChoices: function () {
+      return !this.isTrueFalse
     }
   }
 }

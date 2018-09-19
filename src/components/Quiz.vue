@@ -89,9 +89,9 @@ export default {
       const url = process.env.GOOGLE_SHEETS_WEBHOOK_URL
       const data = {}
 
-      this.questions.forEach((a, index) => {
-        data[`question_${index + 1}_reponse`] = this.answers[index]
-        data[`question_${index + 1}_valide`] = (this.answers[index] === a.answer)
+      this.questions.forEach((question, index) => {
+        data[`question_${index + 1}_reponse`] = this.presentedAnswer(question, this.answers[index])
+        data[`question_${index + 1}_valide`] = (this.answers[index] === question.answer)
       })
 
       data['slug'] = this.slug
@@ -99,6 +99,15 @@ export default {
       data['total'] = this.questions.length
 
       axios.post(url, qs.stringify(data))
+    },
+    presentedAnswer (question, answer) {
+      if (question.isMultipleChoices) {
+        return answer
+      }
+      if (answer === 't') {
+        return 'Vrai'
+      }
+      return 'Faux'
     }
   }
 }
