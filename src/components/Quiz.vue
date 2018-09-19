@@ -86,7 +86,7 @@ export default {
       this.saveAnswers()
     },
     saveAnswers () {
-      const url = 'https://script.google.com/macros/s/AKfycbxJczXb08trioEJwaYN8_hIkyJIuDr2Yfwh9_84pmySJJoo1q4G/exec'
+      const url = process.env.GOOGLE_SHEETS_WEBHOOK_URL
       const data = {}
 
       this.questions.forEach((a, index) => {
