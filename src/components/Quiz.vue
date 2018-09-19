@@ -30,6 +30,8 @@
 
 <script>
 import Question from './Question'
+import axios from 'axios'
+import qs from 'qs'
 
 export default {
   name: 'Quiz',
@@ -43,6 +45,7 @@ export default {
       questionStage: false,
       resultsStage: false,
       title: '',
+      slug: '',
       questions: [],
       currentQuestion: 0,
       answers: [],
@@ -54,6 +57,7 @@ export default {
     fetch(this.url)
       .then(res => res.json())
       .then(res => {
+        this.slug = res.slug
         this.title = res.title
         this.questions = res.questions
         this.introStage = true
@@ -79,6 +83,22 @@ export default {
         if (this.answers[index] === a.answer) this.correct++
       })
       this.perc = ((this.correct / this.questions.length) * 100).toFixed(2)
+      this.saveAnswers()
+    },
+    saveAnswers () {
+      const url = 'https://script.google.com/macros/s/AKfycbxJczXb08trioEJwaYN8_hIkyJIuDr2Yfwh9_84pmySJJoo1q4G/exec'
+      const data = {}
+
+      this.questions.forEach((a, index) => {
+        data[`question_${index + 1}_reponse`] = this.answers[index]
+        data[`question_${index + 1}_valide`] = (this.answers[index] === a.answer)
+      })
+
+      data['slug'] = this.slug
+      data['score'] = this.correct
+      data['total'] = this.questions.length
+
+      axios.post(url, qs.stringify(data))
     }
   }
 }

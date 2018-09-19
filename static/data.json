@@ -1,5 +1,6 @@
 {
   "title":"Le SNOSAN vous propose de tester vos connaissances de la sécurité en mer, pour la plaisance et les loisirs nautiques. Prêts ?",
+  "slug": "quizz-test",
   "questions":[
     {
       "text":"En mer, le numéro d'urgence est le 196",
