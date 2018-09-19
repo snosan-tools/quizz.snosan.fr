@@ -19,8 +19,9 @@ import Quiz from './components/Quiz'
 export default {
   name: 'App',
   data () {
+    const filename = new URL(window.location.href).searchParams.get('quizz') || 'data'
     return {
-      data: new URL(window.location.href).searchParams.get('quizz') || 'data.json'
+      data: `${filename}.json`
     }
   },
   components: {
