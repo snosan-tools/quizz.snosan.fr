@@ -1,0 +1,104 @@
+{
+  "title":"Le SNOSAN vous propose de tester vos connaissances de la sécurité en mer, pour la plaisance et les loisirs nautiques. Prêts ?",
+  "slug":"fabrice-test",
+  "questions":[
+    {
+      "text":"J’ai un souci en mer, j'appelle…",
+      "type":"mc",
+      "answers":[
+        "Le 112",
+        "Le 18",
+        "Le 196",
+        "Un ami"
+      ],
+      "answer":"Le 196",
+      "explanations":"Le numéro de secours en mer est le 196 et vous met en relation avec le CROSS le plus proche de votre position."
+    },
+    {
+      "text":"Quelle est la zone de navigation autorisée pour un scooter des mer 1 place ?",
+      "type":"mc",
+      "answers":[
+        "2 milles d'un abri",
+        "6 milles d'un abri",
+        "12 milles d'un abri",
+        "60 milles d'un abri"
+      ],
+      "answer":"2 milles d'un abri",
+      "explanations":"Pour un scooter des mer 1 place, il faut rester à 2 milles d'un abri. En revanche, vous pouvez aller jusqu'à 6 milles avec scooter des mer 2 places."
+    },
+    {
+      "text":"Le soleil est au beau fixe, la mer est calme. Le plan d'eau est surveillé et la flamme est verte. Sur un engin de plage, je peux naviguer seul jusqu'à une distance maximum d'un abri de :",
+      "type":"mc",
+      "answers":[
+        "300 mètres d'un abri",
+        "2 milles d'un abri",
+        "6 milles d'un abri",
+        "12 milles d'un abri"
+      ],
+      "answer":"300 mètres d'un abri",
+      "explanations":"Il manque une explication"
+    },
+    {
+      "text":"Le marquage de la bouée destinée à assister une personne tombée à l'eau doit indiquer :",
+      "type":"mc",
+      "answers":[
+        "Nom du navire et port d'attache",
+        "Port d'attache et numéro immatriculation",
+        "Numéro d'immatriculation et nom du navire",
+        "Numéro de mobile du propriétaire et nom du navire"
+      ],
+      "answer":"Numéro d'immatriculation et nom du navire",
+      "explanations":"Il manque une explication"
+    },
+    {
+      "text":"Je tombe en panne moteur, quel message dois-je utiliser ?",
+      "type":"mc",
+      "answers":[
+        "MAYDAY",
+        "PAN-PAN"
+      ],
+      "answer":"PAN-PAN",
+      "explanations":"Le message MAYDAY est réservé en cas de danger pour la vie humaine immédiat. Lors d'une demande d'assistance, il convient d'utiliser le message PAN-PAN."
+    },
+    {
+      "text":"Lorsque je navique à 20 noeuds, je parcours en 1 minute :",
+      "type":"mc",
+      "answers":[
+        "217 mètres",
+        "417 mètres",
+        "617 mètres"
+      ],
+      "answer":"617 mètres",
+      "explanations":"Il est important de maîtriser les effets de la navigation sur votre vitesse notamment en cas de route de collision avec une autre embarcation en approche."
+    },
+    {
+      "text":"L'utilisation d'une VHF portable ne nécessite aucun certificat préalable",
+      "type":"tf",
+      "answer":"t",
+      "explanations":"Il manque une explication"
+    },
+    {
+      "text":"Je dois disposer d'un annuaire des marées dès que je pratique une navigation au-delà de 300 mètres d'un abri",
+      "type":"tf",
+      "answer":"t",
+      "explanations":"Il manque une explication"
+    },
+    {
+      "text":"Pour un enfant de 30 kilos maximum, l'équipement individuel de flottabilité est, quelle que soit la distance d'éloignement d'un abri, de :",
+      "type":"mc",
+      "answers":[
+        "50 newtons",
+        "100 newtons",
+        "150 newtons"
+      ],
+      "answer":"100 newtons",
+      "explanations":"La trousse de secours est exigée pour une navigation au-delà de 6 milles nautiques. Néanmoins, l'emport d'une trousse de secours en toute zone est vivement conseillée. "
+    },
+    {
+      "text":"Une trousse de secours est obligatoire dès 2 milles nautiques d'un abri",
+      "type":"tf",
+      "answer":"f",
+      "explanations":"La trousse de secours est exigée pour une navigation au-delà de 6 milles nautiques. Néanmoins, l'emport d'une trousse de secours en toute zone est vivement conseillée. "
+    }
+  ]
+}
