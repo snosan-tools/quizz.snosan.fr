@@ -90,7 +90,7 @@ export default {
       const data = {}
 
       this.questions.forEach((question, index) => {
-        data[`question_${index + 1}_reponse`] = this.presentedAnswer(question, this.answers[index])
+        data[`question_${index + 1}_reponse`] = this.presentedAnswer(this.answers[index])
         data[`question_${index + 1}_valide`] = (this.answers[index] === question.answer)
       })
 
@@ -100,14 +100,14 @@ export default {
 
       axios.post(url, qs.stringify(data))
     },
-    presentedAnswer (question, answer) {
-      if (question.isMultipleChoices) {
-        return answer
-      }
+    presentedAnswer (answer) {
       if (answer === 't') {
         return 'Vrai'
       }
-      return 'Faux'
+      if (answer === 'f') {
+        return 'Faux'
+      }
+      return answer
     }
   }
 }
