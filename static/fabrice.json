@@ -36,7 +36,7 @@
         "12 milles d'un abri"
       ],
       "answer":"300 mètres d'un abri",
-      "explanations":"Il manque une explication"
+      "explanations":"La navigation individuelle sur un engin de plage est limitée à 300m d'un abri. Seules les activités encadrées organisées par un organisme d'Etat ou une structure membre d'une fédération peuvent être pratiquées jusqu'à 2 MN"
     },
     {
       "text":"Le marquage de la bouée destinée à assister une personne tombée à l'eau doit indiquer :",
@@ -48,7 +48,7 @@
         "Numéro de mobile du propriétaire et nom du navire"
       ],
       "answer":"Numéro d'immatriculation et nom du navire",
-      "explanations":"Il manque une explication"
+      "explanations":"C'est une obligation précisée dans la division 240 (article 240-2.14) du réglement annexé à l'arrêté du 23 novembre 1987 relatif à la sécurité des navires"
     },
     {
       "text":"Je tombe en panne moteur, quel message dois-je utiliser ?",
@@ -75,12 +75,12 @@
       "text":"L'utilisation d'une VHF portable ne nécessite aucun certificat préalable",
       "type":"tf",
       "answer":"t",
-      "explanations":"Il manque une explication"
+      "explanations":"Il est important d'emporter sa VHF pour pouvoir contacter les secours. C'est pourquoi, l'utilisation d'une VHF portable ne nécessite aucun certificat préalable."
     },
     {
       "text":"Je dois disposer d'un annuaire des marées dès que je pratique une navigation au-delà de 300 mètres d'un abri",
       "type":"tf",
-      "answer":"t",
+      "answer":"f",
       "explanations":"Il manque une explication"
     },
     {
@@ -92,7 +92,7 @@
         "150 newtons"
       ],
       "answer":"100 newtons",
-      "explanations":"La trousse de secours est exigée pour une navigation au-delà de 6 milles nautiques. Néanmoins, l'emport d'une trousse de secours en toute zone est vivement conseillée. "
+      "explanations":"C'est une obligation précisée dans la division 240 (article 240-2.12) du réglement annexé à l'arrêté du 23 novembre 1987 relatif à la sécurité des navires"
     },
     {
       "text":"Une trousse de secours est obligatoire dès 2 milles nautiques d'un abri",
@@ -102,3 +102,5 @@
     }
   ]
 }
+
+
