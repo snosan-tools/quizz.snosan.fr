@@ -78,10 +78,16 @@
       "explanations":"Il est important d'emporter sa VHF pour pouvoir contacter les secours. C'est pourquoi, l'utilisation d'une VHF portable ne nécessite aucun certificat préalable."
     },
     {
-      "text":"Je dois disposer d'un annuaire des marées dès que je pratique une navigation au-delà de 300 mètres d'un abri",
-      "type":"tf",
-      "answer":"f",
-      "explanations":"Il manque une explication"
+      "text":"Sur un navire de plaisance, hormis en Méditerranée, je dois connaître ou disposer d'un moyen de connaître les heures et coefficients de marée du jour de la zone considérée dès que je pratique une navigation au-delà de :",
+      "type":"mc",
+      "answers":[
+        "300 mètres d'un abri",
+        "2 milles nautiques d'un abri",
+        "6 milles nautiques d'un abri",
+        "60 milles nautiques d'un abri"
+      ],
+      "answer":"300 mètres d'un abri",
+      "explanations":"À partir de 6 milles d'un abri, cette obligation est renforcée : la connaissance de ces éléments ne suffit plus, l'emport de l'annuaire officiel des marées, sous format papier ou numérique, est obligatoire."
     },
     {
       "text":"Pour un enfant de 30 kilos maximum, l'équipement individuel de flottabilité est, quelle que soit la distance d'éloignement d'un abri, de :",
@@ -95,12 +101,16 @@
       "explanations":"C'est une obligation précisée dans la division 240 (article 240-2.12) du réglement annexé à l'arrêté du 23 novembre 1987 relatif à la sécurité des navires"
     },
     {
-      "text":"Une trousse de secours est obligatoire dès 2 milles nautiques d'un abri",
-      "type":"tf",
-      "answer":"f",
-      "explanations":"La trousse de secours est exigée pour une navigation au-delà de 6 milles nautiques. Néanmoins, l'emport d'une trousse de secours en toute zone est vivement conseillée. "
+      "text":"Sur un navire de plaisance, je dois embarquer une trousse de secours conforme à la réglementation dès que je pratique une navigation au-delà de :",
+      "type":"mc",
+      "answers":[
+        "300 mètres d'un abri",
+        "2 milles nautiques d'un abri",
+        "6 milles nautiques d'un abri",
+        "60 milles nautiques d'un abri"
+      ],
+      "answer":"6 milles nautiques d'un abri",
+      "explanations":"L'emport d'une trousse de secours est exigée pour une navigation au-delà de 6 milles nautiques. Néanmoins, elle est vivement conseillée quelle que soit la zone de navigation."
     }
   ]
 }
-
-
