@@ -11,6 +11,7 @@ class TestQuizz(unittest.TestCase):
 
     def test_for_each_quizz(self):
         files = glob.glob("static/*.json")
+        files = [f for f in files if 'liste-quizz' not in f]
 
         for file in files:
             content = json.load(open(file))
