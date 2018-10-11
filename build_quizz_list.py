@@ -5,7 +5,8 @@ import json
 
 TARGET_FILE = 'static/liste-quizz.json'
 
-os.remove(TARGET_FILE)
+if os.path.isfile(TARGET_FILE):
+    os.remove(TARGET_FILE)
 
 files = glob.glob("static/*.json")
 
