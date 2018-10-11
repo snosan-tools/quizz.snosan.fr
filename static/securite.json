@@ -1,0 +1,115 @@
+{
+  "title":"Le SNOSAN vous propose de tester vos connaissances de la sécurité en mer, pour les loisirs nautiques et la plaisance à voile.",
+  "slug":"securite",
+  "questions":[
+    {
+      "text":"Un enfant en bas âge peut se noyer dans",
+      "type":"mc",
+      "answers":[
+        "20 cm d'eau",
+        "50 cm d'eau",
+        "1m d'eau"
+      ],
+      "answer":"20 cm d'eau",
+      "explanations":"Selon Santé publique France, le nombre de noyades du 1er juin au 30 septembre 2018 chez les enfants de moins de 6 ans (332) est en augmentation. Dans 22 cas, elles ont été suivies de décès."
+    },
+    {
+      "text":"À partir de quel niveau de performance un gilet assure-t-il le retournement d'une victime inconsciente?",
+      "type":"mc",
+      "answers":[
+        "50 newtons",
+        "100 newtons",
+        "150 newtons"
+      ],
+      "answer":"150 newtons",
+      "explanations":"Les gilets de sauvetage de sauvetage de 50N ou de 100N ne sont que des aides à la flottabilité. Ils n'assurent pas le retournement d'une personne inconsciente et donc la prévention de la noyade."
+    },
+    {
+      "text":"En mer, le remorquage d'un navire ou d'un flotteur de loisir nautique est :",
+      "type":"mc",
+      "answers":[
+        "Gratuit",
+        "Payant"
+      ],
+      "answer":"Payant",
+      "explanations":"Seul le sauvetage est gratuit. Le remorquage, assistance aux biens, est une prestation payante dont le tarif est librement fixé par son prestataire. Pour profiter de vos vacances, autant faire preuve d'un minimum de vigilance."
+    },
+    {
+      "text":"Le soleil vient de se coucher mais les vagues sont encore belles. Je peux encore pratiquer le surf dans les zones balisées à cet effet.",
+      "type":"tf",
+      "answer":"f",
+      "explanations":"La pratique du surf n'est autorisée qu'en journée."
+    },
+    {
+      "text":"Un plaisancier peut être réquisitionné pour participer à une opération de secours en mer",
+      "type":"tf",
+      "answer":"t",
+      "explanations":"En mer, toute personne a l'obligation de porter secours à une personne en danger. Le CROSS est habilité à requérir votre participation à une opération de sauvetage."
+    },
+    {
+      "text":"Quelle est la première cause des opérations coordonnées par les CROSS au profit des voiliers?",
+      "type":"mc",
+      "answers":[
+        "Un abordage",
+        "Une voie d'eau",
+        "Un démâtage",
+        "Une avarie du système de propulsion"
+      ],
+      "answer":"Une avarie du système de propulsion",
+      "explanations":"La plupart du temps, ce type d'évènement correspond à une panne d'essence. Cela signifie que le plaisancier ne maîtrise plus sa manoeuvre dès lors qu'il ne peut plus se servir de son moteur. La maîtrise d'un voilier est complexe, il est nécessaire de s'y former avant de prendre la barre."
+    },
+    {
+      "text":"Il existe des casques adaptés à la pratique du surf",
+      "type":"tf",
+      "answer":"t",
+      "explanations":"La chute du surfeur sur sa planche ou une collission avec un autre surfeur sont suceptibles de provoquer un traumatisme crânien. Des casques adaptés sont aujourd'hui disponibles, n'hésitez-pas à en porter !"
+    },
+    {
+      "text":"Le défaut d'emport du matériel de sécurité requis par la réglementation est puni :",
+      "type":"mc",
+      "answers":[
+        "D'une contravention de 1ère classe",
+        "D'une contravention de 2e classe",
+        "D'une contravention de 3e classe",
+        "D'une contravention de 4e classe",
+        "D'une contravention de 5e classe"
+      ],
+      "answer":"D'une contravention de 5e classe",
+      "explanations":"Cela correspond à une amende de 1500€ maximum, montant porté à 3750€ en cas de récidive."
+    },
+    {
+      "text":"Une embarcation à moteur de moins de 2.5 mètres est un engin de plage",
+      "type":"mc",
+      "answers":[
+        "Si elle est propulsée par un moteur de 4.5 kW",
+        "Si elle est propulsée par un moteur de 5 kW",
+        "Si elle est propulsée par un moteur de 6 kW"
+      ],
+      "answer":"Si elle est propulsée par un moteur de 4.5 kW",
+      "explanations":"Au-delà de 4.5 kW, l'embarcation est considérée comme un navire à moteur."
+    },
+    {
+      "text":"Entre 300m et 2 milles d'un abri, un véliplanchiste peut naviguer en ne portant qu'un gilet de 50 newtons",
+      "type":"tf",
+      "answer":"f",
+      "explanations":"Un moyen individuel lumineux, étanche, disposant d'une autonomie d'au moins 6h est également obligatoire."
+    },
+    {
+      "text":"Puis-je pratiquer la planche à voile au départ de la grande plage de Biarritz ?",
+      "type":"tf",
+      "answer":"f",
+      "explanations":"Arreté municipal sur la règlementation des pratiques nautiques."
+    },
+    {
+      "text":"Quelle est la vitesse de remontée recommandée en plongée ?",
+      "type":"mc",
+      "answers":[
+        "10/15 mètres par minute",
+        "20/25 mètres par minute",
+        "30/35mètres par minutes"
+      ],
+      "answer":"10/15 mètres par minute",
+      "explanations":"Un palier de 3 minutes à 3 mètres est aussi recommandé."
+    }
+  ]
+}
