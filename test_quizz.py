@@ -5,6 +5,8 @@ import json
 
 
 class TestQuizz(unittest.TestCase):
+    MAX_QUESTIONS_QUIZZ = 15
+
     def __init__(self, *args, **kwargs):
         super(TestQuizz, self).__init__(*args, **kwargs)
         self.slugs = []
@@ -29,6 +31,8 @@ class TestQuizz(unittest.TestCase):
         self.slugs.append(content['slug'])
 
     def check_questions(self, questions):
+        self.assertLessEqual(len(questions), self.MAX_QUESTIONS_QUIZZ)
+
         for question in questions:
             self.assertIn(question['type'], ['mc', 'tf'])
 
